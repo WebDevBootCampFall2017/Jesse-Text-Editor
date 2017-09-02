@@ -1,0 +1,35 @@
+c:\users\jesse ingram\documents\visual studio 2017\Projects\RichText1\RichText1\obj\Debug\RichText1.vbprojResolveAssemblyReference.cache
+c:\users\jesse ingram\documents\visual studio 2017\Projects\RichText1\RichText1\obj\Debug\RichText1.Form1.resources
+c:\users\jesse ingram\documents\visual studio 2017\Projects\RichText1\RichText1\obj\Debug\RichText1.Resources.resources
+c:\users\jesse ingram\documents\visual studio 2017\Projects\RichText1\RichText1\obj\Debug\RichText1.vbproj.GenerateResource.Cache
+c:\users\jesse ingram\documents\visual studio 2017\Projects\RichText1\RichText1\bin\Debug\RichText1.exe.config
+c:\users\jesse ingram\documents\visual studio 2017\Projects\RichText1\RichText1\bin\Debug\RichText1.exe
+c:\users\jesse ingram\documents\visual studio 2017\Projects\RichText1\RichText1\bin\Debug\RichText1.pdb
+c:\users\jesse ingram\documents\visual studio 2017\Projects\RichText1\RichText1\bin\Debug\RichText1.xml
+c:\users\jesse ingram\documents\visual studio 2017\Projects\RichText1\RichText1\obj\Debug\RichText1.exe
+c:\users\jesse ingram\documents\visual studio 2017\Projects\RichText1\RichText1\obj\Debug\RichText1.xml
+c:\users\jesse ingram\documents\visual studio 2017\Projects\RichText1\RichText1\obj\Debug\RichText1.pdb
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\TextEditorFinal\bin\Debug\RichText1.exe.config
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\TextEditorFinal\bin\Debug\RichText1.exe
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\TextEditorFinal\bin\Debug\RichText1.pdb
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\TextEditorFinal\bin\Debug\RichText1.xml
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\TextEditorFinal\obj\Debug\RichText1.vbprojResolveAssemblyReference.cache
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\TextEditorFinal\obj\Debug\RichText1.Form1.resources
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\TextEditorFinal\obj\Debug\RichText1.Resources.resources
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\TextEditorFinal\obj\Debug\RichText1.vbproj.GenerateResource.Cache
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\TextEditorFinal\obj\Debug\RichText1.exe
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\TextEditorFinal\obj\Debug\RichText1.xml
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\TextEditorFinal\obj\Debug\RichText1.pdb
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\TextEditorFinal\obj\Debug\RichText1.AboutBox1.resources
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\RichText1\bin\Debug\RichText1.exe.config
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\RichText1\bin\Debug\RichText1.exe
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\RichText1\bin\Debug\RichText1.pdb
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\RichText1\bin\Debug\RichText1.xml
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\RichText1\obj\Debug\RichText1.vbprojResolveAssemblyReference.cache
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\RichText1\obj\Debug\RichText1.AboutBox1.resources
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\RichText1\obj\Debug\RichText1.Form1.resources
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\RichText1\obj\Debug\RichText1.Resources.resources
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\RichText1\obj\Debug\RichText1.vbproj.GenerateResource.Cache
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\RichText1\obj\Debug\RichText1.exe
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\RichText1\obj\Debug\RichText1.xml
+C:\Users\Jesse Ingram\Documents\Visual Studio 2017\Projects\Text Editor Final\RichText1\obj\Debug\RichText1.pdb
