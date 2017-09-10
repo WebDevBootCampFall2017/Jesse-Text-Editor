@@ -3,7 +3,7 @@ Partial Class Form1
 	Inherits System.Windows.Forms.Form
 
 	'Form overrides dispose to clean up the component list.
-	<System.Diagnostics.DebuggerNonUserCode()> _
+	<System.Diagnostics.DebuggerNonUserCode()>
 	Protected Overrides Sub Dispose(ByVal disposing As Boolean)
 		Try
 			If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
 	'NOTE: The following procedure is required by the Windows Form Designer
 	'It can be modified using the Windows Form Designer.  
 	'Do not modify it using the code editor.
-	<System.Diagnostics.DebuggerStepThrough()> _
+	<System.Diagnostics.DebuggerStepThrough()>
 	Private Sub InitializeComponent()
 		Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
 		Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -35,6 +35,7 @@ Partial Class Form1
 		Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.WindowThemeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.WordWrapToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
 		Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.ProgramInformationToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
@@ -42,6 +43,7 @@ Partial Class Form1
 		Me.FontDialog1 = New System.Windows.Forms.FontDialog()
 		Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
 		Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
+		Me.ColorDialog2 = New System.Windows.Forms.ColorDialog()
 		Me.MenuStrip1.SuspendLayout()
 		Me.SuspendLayout()
 		'
@@ -97,7 +99,7 @@ Partial Class Form1
 		Me.FontToolStripMenuItem.Name = "FontToolStripMenuItem"
 		Me.FontToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
 			Or System.Windows.Forms.Keys.F), System.Windows.Forms.Keys)
-		Me.FontToolStripMenuItem.Size = New System.Drawing.Size(292, 30)
+		Me.FontToolStripMenuItem.Size = New System.Drawing.Size(338, 30)
 		Me.FontToolStripMenuItem.Text = "Font.."
 		'
 		'FontColorToolStripMenuItem
@@ -105,21 +107,22 @@ Partial Class Form1
 		Me.FontColorToolStripMenuItem.Name = "FontColorToolStripMenuItem"
 		Me.FontColorToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
 			Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-		Me.FontColorToolStripMenuItem.Size = New System.Drawing.Size(292, 30)
+		Me.FontColorToolStripMenuItem.Size = New System.Drawing.Size(338, 30)
 		Me.FontColorToolStripMenuItem.Text = "Color"
 		'
 		'FindToolStripMenuItem
 		'
 		Me.FindToolStripMenuItem.Name = "FindToolStripMenuItem"
 		Me.FindToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.F), System.Windows.Forms.Keys)
-		Me.FindToolStripMenuItem.Size = New System.Drawing.Size(292, 30)
+		Me.FindToolStripMenuItem.Size = New System.Drawing.Size(338, 30)
 		Me.FindToolStripMenuItem.Text = "Find"
 		'
 		'FindAndReplaceToolStripMenuItem
 		'
 		Me.FindAndReplaceToolStripMenuItem.Name = "FindAndReplaceToolStripMenuItem"
-		Me.FindAndReplaceToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.R), System.Windows.Forms.Keys)
-		Me.FindAndReplaceToolStripMenuItem.Size = New System.Drawing.Size(292, 30)
+		Me.FindAndReplaceToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
+			Or System.Windows.Forms.Keys.F), System.Windows.Forms.Keys)
+		Me.FindAndReplaceToolStripMenuItem.Size = New System.Drawing.Size(338, 30)
 		Me.FindAndReplaceToolStripMenuItem.Text = "Find and Replace"
 		'
 		'ViewToolStripMenuItem
@@ -137,9 +140,18 @@ Partial Class Form1
 		'
 		'WordWrapToolStripMenuItem
 		'
+		Me.WordWrapToolStripMenuItem.AutoToolTip = True
+		Me.WordWrapToolStripMenuItem.CheckOnClick = True
+		Me.WordWrapToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripSeparator1})
 		Me.WordWrapToolStripMenuItem.Name = "WordWrapToolStripMenuItem"
 		Me.WordWrapToolStripMenuItem.Size = New System.Drawing.Size(220, 30)
 		Me.WordWrapToolStripMenuItem.Text = "Word Wrap"
+		Me.WordWrapToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText
+		'
+		'ToolStripSeparator1
+		'
+		Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+		Me.ToolStripSeparator1.Size = New System.Drawing.Size(207, 6)
 		'
 		'AboutToolStripMenuItem
 		'
@@ -163,7 +175,7 @@ Partial Class Form1
 		Me.RichTextBox1.Dock = System.Windows.Forms.DockStyle.Fill
 		Me.RichTextBox1.Location = New System.Drawing.Point(0, 33)
 		Me.RichTextBox1.Name = "RichTextBox1"
-		Me.RichTextBox1.Size = New System.Drawing.Size(1283, 211)
+		Me.RichTextBox1.Size = New System.Drawing.Size(1283, 245)
 		Me.RichTextBox1.TabIndex = 2
 		Me.RichTextBox1.Text = ""
 		'
@@ -171,7 +183,7 @@ Partial Class Form1
 		'
 		Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
 		Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-		Me.ClientSize = New System.Drawing.Size(1283, 244)
+		Me.ClientSize = New System.Drawing.Size(1283, 278)
 		Me.Controls.Add(Me.RichTextBox1)
 		Me.Controls.Add(Me.MenuStrip1)
 		Me.MainMenuStrip = Me.MenuStrip1
@@ -191,11 +203,8 @@ Partial Class Form1
 	Friend WithEvents EditToolStripMenuItem As ToolStripMenuItem
 	Friend WithEvents FontToolStripMenuItem As ToolStripMenuItem
 	Friend WithEvents FontColorToolStripMenuItem As ToolStripMenuItem
-	Friend WithEvents FindToolStripMenuItem As ToolStripMenuItem
-	Friend WithEvents FindAndReplaceToolStripMenuItem As ToolStripMenuItem
 	Friend WithEvents ViewToolStripMenuItem As ToolStripMenuItem
 	Friend WithEvents WindowThemeToolStripMenuItem As ToolStripMenuItem
-	Friend WithEvents WordWrapToolStripMenuItem As ToolStripMenuItem
 	Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
 	Friend WithEvents ProgramInformationToolStripMenuItem As ToolStripMenuItem
 	Friend WithEvents OpenFileDialog1 As OpenFileDialog
@@ -203,4 +212,9 @@ Partial Class Form1
 	Friend WithEvents FontDialog1 As FontDialog
 	Friend WithEvents RichTextBox1 As RichTextBox
 	Friend WithEvents ColorDialog1 As ColorDialog
+	Friend WithEvents FindToolStripMenuItem As ToolStripMenuItem
+	Friend WithEvents FindAndReplaceToolStripMenuItem As ToolStripMenuItem
+	Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
+	Friend WithEvents ColorDialog2 As ColorDialog
+	Friend WithEvents WordWrapToolStripMenuItem As ToolStripMenuItem
 End Class

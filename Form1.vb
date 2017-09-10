@@ -3,6 +3,7 @@ Imports System.Windows.Forms
 
 Public Class Form1
 
+
 	Private Sub RichTextBox1_TextChanged(sender As Object, e As EventArgs)
 
 	End Sub
@@ -11,14 +12,14 @@ Public Class Form1
 
 		With OpenFileDialog1
 			.Title = "Open File"
-			.Filter = "Rich Text Files | *.rtf"
+			.Filter = "Text Files | *.txt"
 			.FileName = ""
 			.CheckFileExists = vbTrue
 		End With
 
 		If OpenFileDialog1.ShowDialog = DialogResult.OK Then
 			RichTextBox1.LoadFile(OpenFileDialog1.FileName,
-								  RichTextBoxStreamType.RichText)
+							  RichTextBoxStreamType.PlainText)
 		End If
 
 	End Sub
@@ -27,14 +28,14 @@ Public Class Form1
 
 		With SaveFileDialog1
 			.Title = "Save File"
-			.Filter = "Rich Text Files | *.rtf"
-			.DefaultExt = ".rtf"
+			.Filter = "Text Files | *.txt"
+			.DefaultExt = ".txt"
 			.OverwritePrompt = True
 		End With
 
 		If SaveFileDialog1.ShowDialog = DialogResult.OK Then
 			RichTextBox1.SaveFile(SaveFileDialog1.FileName,
-								  RichTextBoxStreamType.RichText)
+							  RichTextBoxStreamType.PlainText)
 		End If
 
 	End Sub
@@ -71,29 +72,20 @@ Public Class Form1
 
 	End Sub
 
-	Private Sub FindToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FindToolStripMenuItem.Click
-		MessageBox.Show(FindMyText(New Char()).ToString())
+	Private Sub FindToolStripMenuItem_Click(sender As Object, e As EventArgs)
+
 	End Sub
 
-	Public Function FindMyText(text As String) As Boolean
-		' Initialize the return value to false by default.
-		Dim returnValue As Boolean = False
+	Private Sub WordWrapToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles WordWrapToolStripMenuItem.Click
 
-		' Ensure a search string has been specified.
-		If text.Length > 0 Then
-			' Obtain the location of the search string in richTextBox1.
-			Dim indexToText As Integer = RichTextBox1.Find(text, RichTextBoxFinds.MatchCase)
-			' Determine if the text was found in richTextBox1.
-			If indexToText >= 0 Then
-				returnValue = True
-			End If
+		If WordWrapToolStripMenuItem.CheckState = CheckState.Checked Then
+			RichTextBox1.WordWrap = True
 		End If
 
-		Return returnValue
-	End Function
+		If WordWrapToolStripMenuItem.CheckState = CheckState.Unchecked Then
+			RichTextBox1.WordWrap = False
+		End If
 
-
-
-
+	End Sub
 
 End Class
