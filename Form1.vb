@@ -1,5 +1,6 @@
 ﻿Imports System.IO
 Imports System.Windows.Forms
+Imports System.Drawing.Color
 
 Public Class Form1
 
@@ -78,6 +79,7 @@ Public Class Form1
 
 	Private Sub WordWrapToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles WordWrapToolStripMenuItem.Click
 
+
 		If WordWrapToolStripMenuItem.CheckState = CheckState.Checked Then
 			RichTextBox1.WordWrap = True
 		End If
@@ -88,4 +90,50 @@ Public Class Form1
 
 	End Sub
 
+	Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
+
+		If ToolStripMenuItem1.CheckState = CheckState.Checked Then
+			ToolStripMenuItem2.CheckState = CheckState.Unchecked
+			ToolStripMenuItem3.CheckState = CheckState.Unchecked
+			DefaultToolStripMenuItem.CheckState = CheckState.Unchecked
+			RichTextBox1.ForeColor = Black
+			RichTextBox1.BackColor = Linen
+
+		End If
+	End Sub
+
+	Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
+
+		If ToolStripMenuItem2.CheckState = CheckState.Checked Then
+			ToolStripMenuItem1.CheckState = CheckState.Unchecked
+			ToolStripMenuItem3.CheckState = CheckState.Unchecked
+			DefaultToolStripMenuItem.CheckState = CheckState.Unchecked
+			RichTextBox1.ForeColor = Black
+			RichTextBox1.BackColor = LightCoral
+
+		End If
+	End Sub
+
+	Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
+		If ToolStripMenuItem3.CheckState = CheckState.Checked Then
+			ToolStripMenuItem2.CheckState = CheckState.Unchecked
+			ToolStripMenuItem1.CheckState = CheckState.Unchecked
+			DefaultToolStripMenuItem.CheckState = CheckState.Unchecked
+			RichTextBox1.ForeColor = Black
+			RichTextBox1.BackColor = LightGray
+
+		End If
+	End Sub
+
+	Private Sub DefaultToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DefaultToolStripMenuItem.Click
+		If DefaultToolStripMenuItem.CheckState = CheckState.Checked Then
+			ToolStripMenuItem3.CheckState = CheckState.Unchecked
+			ToolStripMenuItem2.CheckState = CheckState.Unchecked
+			ToolStripMenuItem1.CheckState = CheckState.Unchecked
+			RichTextBox1.ForeColor = Black
+			RichTextBox1.BackColor = White
+
+		End If
+	End Sub
 End Class
+

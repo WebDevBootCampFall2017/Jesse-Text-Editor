@@ -34,6 +34,9 @@ Partial Class Form1
 		Me.FindAndReplaceToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.WindowThemeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+		Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+		Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
+		Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
 		Me.WordWrapToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
 		Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -44,6 +47,7 @@ Partial Class Form1
 		Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
 		Me.ColorDialog1 = New System.Windows.Forms.ColorDialog()
 		Me.ColorDialog2 = New System.Windows.Forms.ColorDialog()
+		Me.DefaultToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
 		Me.MenuStrip1.SuspendLayout()
 		Me.SuspendLayout()
 		'
@@ -134,9 +138,31 @@ Partial Class Form1
 		'
 		'WindowThemeToolStripMenuItem
 		'
+		Me.WindowThemeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem1, Me.ToolStripMenuItem2, Me.ToolStripMenuItem3, Me.DefaultToolStripMenuItem})
 		Me.WindowThemeToolStripMenuItem.Name = "WindowThemeToolStripMenuItem"
 		Me.WindowThemeToolStripMenuItem.Size = New System.Drawing.Size(220, 30)
 		Me.WindowThemeToolStripMenuItem.Text = "Window Theme"
+		'
+		'ToolStripMenuItem1
+		'
+		Me.ToolStripMenuItem1.CheckOnClick = True
+		Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
+		Me.ToolStripMenuItem1.Size = New System.Drawing.Size(210, 30)
+		Me.ToolStripMenuItem1.Text = "Theme 1"
+		'
+		'ToolStripMenuItem2
+		'
+		Me.ToolStripMenuItem2.CheckOnClick = True
+		Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
+		Me.ToolStripMenuItem2.Size = New System.Drawing.Size(210, 30)
+		Me.ToolStripMenuItem2.Text = "Theme 2"
+		'
+		'ToolStripMenuItem3
+		'
+		Me.ToolStripMenuItem3.CheckOnClick = True
+		Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
+		Me.ToolStripMenuItem3.Size = New System.Drawing.Size(210, 30)
+		Me.ToolStripMenuItem3.Text = "Theme 3"
 		'
 		'WordWrapToolStripMenuItem
 		'
@@ -151,7 +177,7 @@ Partial Class Form1
 		'ToolStripSeparator1
 		'
 		Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-		Me.ToolStripSeparator1.Size = New System.Drawing.Size(207, 6)
+		Me.ToolStripSeparator1.Size = New System.Drawing.Size(69, 6)
 		'
 		'AboutToolStripMenuItem
 		'
@@ -178,6 +204,13 @@ Partial Class Form1
 		Me.RichTextBox1.Size = New System.Drawing.Size(1283, 245)
 		Me.RichTextBox1.TabIndex = 2
 		Me.RichTextBox1.Text = ""
+		'
+		'DefaultToolStripMenuItem
+		'
+		Me.DefaultToolStripMenuItem.CheckOnClick = True
+		Me.DefaultToolStripMenuItem.Name = "DefaultToolStripMenuItem"
+		Me.DefaultToolStripMenuItem.Size = New System.Drawing.Size(210, 30)
+		Me.DefaultToolStripMenuItem.Text = "Default"
 		'
 		'Form1
 		'
@@ -217,4 +250,8 @@ Partial Class Form1
 	Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
 	Friend WithEvents ColorDialog2 As ColorDialog
 	Friend WithEvents WordWrapToolStripMenuItem As ToolStripMenuItem
+	Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
+	Friend WithEvents ToolStripMenuItem2 As ToolStripMenuItem
+	Friend WithEvents ToolStripMenuItem3 As ToolStripMenuItem
+	Friend WithEvents DefaultToolStripMenuItem As ToolStripMenuItem
 End Class
